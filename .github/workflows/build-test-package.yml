@@ -59,6 +59,7 @@ jobs:
       if: matrix.os == 'windows-2019'
       run: |
         cd ..
+        set PATH=%PATH%;%cd%/ITK-build/bin
         mkdir ITK-build
         cd ITK-build
         call "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Auxiliary\Build\vcvars64.bat"
